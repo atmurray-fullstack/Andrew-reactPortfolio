@@ -1,0 +1,7 @@
+.nav{
+position:fixed;
+top:0;
+flex-direction: row-reverse;
+width: 100%;
+padding-right: 10%;
+}
