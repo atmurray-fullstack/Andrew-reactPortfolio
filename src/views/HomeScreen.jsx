@@ -28,20 +28,47 @@ const HomeScreen = () => {
 
         },
         {
-            pic: 'mealTime.gif',
-            title: 'Crypto Exchange',
+            pic: 'burger.png',
+            title: 'Murray\'s Burgers',
             description: 'App for tracking crypto values against int. currencies',
-            deployedUrl: "https://mazdamike.github.io/Cryptocurrency-Exchange-and-News-Tracker/",
-            repoUrl: "https://github.com/mazdamike/Cryptocurrency-Exchange-and-News-Tracker",
-            tech: 'Materialize, jQuery, Express, Node.js, AJAX, API'
+            deployedUrl: "https://frozen-badlands-38453.herokuapp.com/",
+            repoUrl: "https://github.com/atmurray-fullstack/Murrays-Burgers-restaurant-app",
+            tech: 'Express-Handlebars, JS,Node.js, Bootstrap'
 
         },
         {
-            pic: 'exchange_screenshot.png',
-            title: 'Crypto Exchange',
+            pic: 'weather_screenshot.png',
+            title: 'Weather Forecast',
+            description: 'Multiple choice quiz',
+            deployedUrl: "https://atmurray-fullstack.github.io/Weather-Forecast-Info-app/",
+            repoUrl: "https://github.com/atmurray-fullstack/Weather-Forecast-Info-app",
+            tech: 'AJAX, API, JS, Bootstrap, jQuery'
+
+        },
+        {
+            pic: 'multiChoice.jpg',
+            title: 'Multichoice Quiz',
+            description: 'Multiple Choice Quiz',
+            deployedUrl: "https://mazdamike.github.io/Cryptocurrency-Exchange-and-News-Tracker/",
+            repoUrl: "https://github.com/mazdamike/Cryptocurrency-Exchange-and-News-Tracker",
+            tech: 'Bootstrap, jQuery, Node.js, AJAX, API'
+
+        },
+        {
+            pic: 'softwareTeamGenerator.gif',
+            title: 'Node CLI Team Maker',
             description: 'App for tracking crypto values against int. currencies',
             deployedUrl: "https://mazdamike.github.io/Cryptocurrency-Exchange-and-News-Tracker/",
             repoUrl: "https://github.com/mazdamike/Cryptocurrency-Exchange-and-News-Tracker",
+            tech: 'Node, Express, JS, Html, Bootstrap'
+
+        },
+        {
+            pic: 'Fchart.gif',
+            title: 'Fitness Tracker',
+            description: 'App for tracking crypto values against int. currencies',
+            deployedUrl: "https://glacial-wildwood-74675.herokuapp.com/",
+            repoUrl: "https://github.com/atmurray-fullstack/Fitness_Tracker",
             tech: 'Materialize, jQuery, Express, Node.js, AJAX, API'
 
         }
@@ -80,11 +107,11 @@ const HomeScreen = () => {
                 <div className="card text-center mb-2" style={{ width: '100%' }}>
                     <img src="..." className="card-img-top" alt="..." />
                     <div className="card-body">
-                        <h4 className="card-title">Projects</h4>
-                        <p className="card-text"></p>
+                        <h3 className="card-title">Projects</h3>
+                        <p className="card-text">Here are some of the projects that I have built.</p>
                     </div>
                 </div>
-                <div className='row justify-content-center text-center d-flex flex-row flex-wrap' style={{ height: '40vh' }} >
+                <div className='row justify-content-center text-center' style={{ height: '40vh' }} >
 
                     {userProjects.map(el => {
                         return <RepoComponent

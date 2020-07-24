@@ -1,7 +1,15 @@
 .nav{
+    background-color: gray;
 position:fixed;
 top:0;
 flex-direction: row-reverse;
 width: 100%;
 padding-right: 10%;
+z-index: 999;
+
+}
+.nav-link{
+    color: orange;
+    font-weight: bolder;
+    font-size: 1rem;
 }
