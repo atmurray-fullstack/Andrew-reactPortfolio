@@ -69,7 +69,7 @@ const HomeScreen = () => {
     return (
         <>
             <AppHeader />
-            <AppScreen >
+            <AppScreen>
                 <div className="jumbotron text-center" style={{ backgroundColor: 'white' }}>
                     <h1 className="display-4">Welcome to my Portfolio Page!</h1>
                     <p className="lead">My name is Andrew and I enjoy building things and solving problems.</p>
@@ -84,11 +84,11 @@ const HomeScreen = () => {
                         <p className="card-text"></p>
                     </div>
                 </div>
-                <div className='row justify-content-center text-center' style={{ width: '100%' }} >
+                <div className='row justify-content-center text-center d-flex flex-row flex-wrap' style={{ height: '40vh' }} >
 
                     {userProjects.map(el => {
                         return <RepoComponent
-                            className='mx-auto'
+                            className='mx-auto col-3'
                             pic={el.pic}
                             title={el.title}
                             description={el.description}

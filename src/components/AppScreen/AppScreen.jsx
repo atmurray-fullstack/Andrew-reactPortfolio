@@ -4,7 +4,7 @@ import './screen.css'
 
 const AppScreen = ({ children }) => {
     return (
-        <div className='container m-0 mx-auto' >
+        <div className='container' >
             {children}
         </div>
     );
