@@ -3,7 +3,8 @@ import axios from 'axios';
 
 import AppScreen from '../components/AppScreen/AppScreen'
 import AppHeader from '../components/AppHeader/AppHeader';
-import './styleDefault.css';
+import Appfooter from '../components/AppFooter/AppFooter'
+import './homeScreen.css';
 import RepoComponent from '../components/Repocomponent/RepoComponent';
 
 
@@ -69,7 +70,7 @@ const HomeScreen = () => {
             description: 'App for tracking crypto values against int. currencies',
             deployedUrl: "https://glacial-wildwood-74675.herokuapp.com/",
             repoUrl: "https://github.com/atmurray-fullstack/Fitness_Tracker",
-            tech: 'Materialize, jQuery, Express, Node.js, AJAX, API'
+            tech: 'MongoDB, Mongoose, Node, Express'
 
         }
     ]
@@ -104,14 +105,14 @@ const HomeScreen = () => {
                     <p>React/React-Native || JavaScript || Html & CSS || jQuery || Node.js || MongoDB || MySQL</p>
                     <hr className="my-1" />
                 </div>
-                <div className="card text-center mb-2" style={{ width: '100%' }}>
-                    <img src="..." className="card-img-top" alt="..." />
-                    <div className="card-body">
+
+                <div className="card text-center mb-2 d-flex justify-content-center align-items-center" style={{ width: '100%' }}>
+                    <div className="card-body d-flex-col justify-content-center align-items-center">
                         <h3 className="card-title">Projects</h3>
                         <p className="card-text">Here are some of the projects that I have built.</p>
                     </div>
                 </div>
-                <div className='row justify-content-center text-center' style={{ height: '40vh' }} >
+                <div id='projects-container' className='row justify-content-center text-center overflow-auto' style={{ height: 'auto' }} >
 
                     {userProjects.map(el => {
                         return <RepoComponent
@@ -130,6 +131,7 @@ const HomeScreen = () => {
 
 
             </AppScreen>
+            <Appfooter />
         </>
 
 
