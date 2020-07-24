@@ -21,4 +21,10 @@
     font-weight: bold;
     color: orange;
 }
+#profile-pic{
+    border:solid white 6px;
+    border-radius: 50%;
+    height: 75%;
+    margin-top: 5%;
+}
 

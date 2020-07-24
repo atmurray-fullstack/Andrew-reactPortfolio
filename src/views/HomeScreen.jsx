@@ -6,6 +6,7 @@ import AppHeader from '../components/AppHeader/AppHeader';
 import Appfooter from '../components/AppFooter/AppFooter'
 import './homeScreen.css';
 import RepoComponent from '../components/Repocomponent/RepoComponent';
+import Parallax from '../components/Parallax/Parallax';
 
 
 const HomeScreen = () => {
@@ -97,6 +98,9 @@ const HomeScreen = () => {
     return (
         <>
             <AppHeader />
+            <Parallax height={400}>
+                <img id='profile-pic' alt='Andrew Profile Pic' src={require('../assets/images/Andrew_profile.jpg')} />
+            </Parallax>
             <AppScreen>
                 <div className="jumbotron text-center" style={{ backgroundColor: 'white' }}>
                     <h1 className="display-4">Welcome to my Portfolio Page!</h1>
@@ -131,6 +135,8 @@ const HomeScreen = () => {
 
 
             </AppScreen>
+            <Parallax img={'instabridge_grey.png'} height={300} width={'100%'} />
+
             <Appfooter />
         </>
 

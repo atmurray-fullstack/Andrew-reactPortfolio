@@ -14,7 +14,7 @@ const AppFooter = () => {
                         </div>
 
                     </div>
-                    <div className="col-7 text-left " style={{ display: 'inline-block' }}>
+                    <div className="col-7 text-left mt-2" style={{ display: 'inline-block' }}>
 
                         <a target="_blank" rel="noopener noreferrer" href="https://github.com/atmurray-fullstack"><img src={require("../../assets/images/github_black.png")}
                             style={{ height: '40px', height: '40px' }} alt='gitrepo link' /></a>
