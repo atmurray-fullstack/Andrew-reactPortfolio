@@ -102,15 +102,19 @@ const HomeScreen = () => {
                 <img id='profile-pic' alt='Andrew Profile Pic' src={require('../assets/images/Andrew_profile.jpg')} />
             </Parallax>
             <AppScreen>
-                <div className="jumbotron text-center" style={{ backgroundColor: 'white' }}>
+                <div id='home' className="jumbotron text-center" style={{ backgroundColor: 'white' }}>
                     <h1 className="display-4">Welcome to my Portfolio Page!</h1>
                     <p className="lead">My name is Andrew and I enjoy building things and solving problems.</p>
                     <hr className="my-4" />
                     <p>React/React-Native || JavaScript || Html & CSS || jQuery || Node.js || MongoDB || MySQL</p>
                     <hr className="my-1" />
+                    <h3>About Me</h3>
+                    <p>I am a graduate, or soon to be (depending on when you are reading this) of Georgia Tech's Fullstack coding bootcamp.
+                    I like to work in the front end, but sometimes you have to wear a lot of hats. I enjoy working with React/React-Native
+                         since it allows me to use my favorite language; JavaScript.</p>
                 </div>
 
-                <div className="card text-center mb-2 d-flex justify-content-center align-items-center" style={{ width: '100%' }}>
+                <div id='projects' className="card text-center mb-2 d-flex justify-content-center align-items-center" style={{ width: '100%' }}>
                     <div className="card-body d-flex-col justify-content-center align-items-center">
                         <h3 className="card-title">Projects</h3>
                         <p className="card-text">Here are some of the projects that I have built.</p>
@@ -120,23 +124,37 @@ const HomeScreen = () => {
 
                     {userProjects.map(el => {
                         return <RepoComponent
-                            className='mx-auto col-3'
+                            className='mx-auto col-3 mt-3'
                             pic={el.pic}
                             title={el.title}
                             description={el.description}
                             repoUrl={el.repoUrl}
                             deployedUrl={el.deployedUrl}
                             tech={el.tech}
-
                         />
                     })}
                 </div>
-
-
-
             </AppScreen>
-            <Parallax img={'instabridge_grey.png'} height={300} width={'100%'} />
+            <Parallax img={'instabridge_grey.png'} height={300} width={'100%'} >
 
+                <div id='contact' style={{ height: '90%' }} className="row mx-auto text-center text-alert">
+                    <div className="col-12 text-center footer-contact">
+                        <div style={{
+                            marginTop: '5%',
+                            fontSize: '1.5rem',
+                            fontWeight: 'bold',
+                            color: 'orange'
+                        }}>
+                            <p>Contact Info</p>
+                            <p>atmurray.fullstack@gmail.com</p>
+                            <p>(470)265-9858</p>
+                            <div style={{ height: 2, backgroundColor: 'orange', width: '100%' }} />
+                            <p className='mt-2' style={{ fontSize: '1rem' }} >Links to Github, LinkedIn, and Resume below</p>
+                        </div>
+                    </div>
+
+                </div>
+            </Parallax>
             <Appfooter />
         </>
 
