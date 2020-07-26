@@ -14,7 +14,7 @@ const HomeScreen = () => {
         {
             pic: 'mealTime.gif',
             title: 'MealTime App',
-            description: 'Fullstack Application',
+            description: 'Meal order and plan app',
             deployedUrl: "https://fathomless-temple-07681.herokuapp.com/",
             repoUrl: "https://github.com/atmurray-fullstack/MealTime-Group5",
             tech: 'Materialize, Express, Node.js, Express-Handlebars'
