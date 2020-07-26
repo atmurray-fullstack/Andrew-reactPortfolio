@@ -3,7 +3,7 @@ import React from 'react';
 import './style.css'
 const Parallax = ({ children, height }) => {
     return (
-        <div class='parallax text-center'
+        <div className='parallax text-center container-fluid'
             style={{ height: height }}
         >
             {children}

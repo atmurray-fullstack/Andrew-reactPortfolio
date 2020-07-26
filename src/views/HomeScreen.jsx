@@ -96,9 +96,9 @@ const HomeScreen = () => {
     // }, [])
 
     return (
-        <>
+        <div className='container-fluid' style={{ margin: 0, padding: 0 }}>
             <AppHeader />
-            <Parallax height={400}>
+            <Parallax height={400} >
                 <img id='profile-pic' alt='Andrew Profile Pic' src={require('../assets/images/Andrew_profile.jpg')} />
             </Parallax>
             <AppScreen>
@@ -156,7 +156,7 @@ const HomeScreen = () => {
                 </div>
             </Parallax>
             <Appfooter />
-        </>
+        </div>
 
 
 
