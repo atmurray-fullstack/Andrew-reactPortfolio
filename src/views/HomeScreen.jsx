@@ -77,23 +77,23 @@ const HomeScreen = () => {
     ]
     const [userRepos, setUserRepos] = useState([])
     let userName = 'atmurray-fullstack'
-    // const getUserData = async () => {
-    //     await axios.get(`https://api.github.com/users/${userName}/repos`)
-    //         .then(user => {
-    //             const repos = user.data.map((el, ind) => {
-    //                 return {
-    //                     key: ind,
-    //                     url: el.html_url,
-    //                     description: el.description
-    //                 }
-    //             })
-    //             console.log(user)
-    //             setUserRepos(repos)
-    //         })
-    // }
-    // useEffect(() => {
-    //     getUserData();
-    // }, [])
+    const getUserData = async () => {
+        await axios.get(`https://api.github.com/users/${userName}/repos`)
+            .then(user => {
+                const repos = user.data.map((el, ind) => {
+                    return {
+                        key: ind,
+                        url: el.html_url,
+                        description: el.description
+                    }
+                })
+                console.log(user)
+                setUserRepos(repos)
+            })
+    }
+    useEffect(() => {
+        getUserData();
+    }, [])
 
     return (
         <div className='container-fluid' style={{ margin: 0, padding: 0 }}>
