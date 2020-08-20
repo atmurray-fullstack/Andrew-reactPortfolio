@@ -12,6 +12,15 @@ import Parallax from '../components/Parallax/Parallax';
 const HomeScreen = () => {
     const userProjects = [
         {
+            pic: 'instagroom_gif.gif',
+            title: 'Instagroom App',
+            description: 'React Native mobile app',
+            deployedUrl: "https://expo.io/@atmurray/instagroom-client",
+            repoUrl: "https://github.com/deawar/instagroom-client",
+            tech: 'Node.js, Express, React-Native, MongoDB'
+
+        },
+        {
             pic: 'mealTime.gif',
             title: 'MealTime App',
             description: 'Meal order and plan app',
