@@ -20,11 +20,10 @@
 .display-4{
     font-weight: bold;
     color: orange;
+    font-size: 3rem;
 }
 #profile-pic{
-    border:solid white 6px;
     border-radius: 50%;
     height: 75%;
-    margin-top: 5%;
 }
 

@@ -144,12 +144,11 @@ const HomeScreen = () => {
                     })}
                 </div>
             </AppScreen>
-            <Parallax img={'instabridge_grey.png'} height={300} width={'100%'} >
+            <Parallax img={'instabridge_grey.png'} height={300}   >
 
                 <div id='contact' style={{ height: '90%' }} className="row mx-auto text-center text-alert">
                     <div className="col-12 text-center footer-contact">
                         <div style={{
-                            marginTop: '5%',
                             fontSize: '1.5rem',
                             fontWeight: 'bold',
                             color: 'orange'
