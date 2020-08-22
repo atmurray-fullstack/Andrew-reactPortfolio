@@ -4,6 +4,7 @@
     padding-top:75px;
     /* Set a specific height */
     height: 500px;
+    width: 100%;
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;

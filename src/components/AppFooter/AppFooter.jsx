@@ -12,7 +12,7 @@ const AppFooter = () => {
                 <a className='mr-5' target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/andrew-murray-7b9b195b/"><img src={require("../../assets/images/linkedIn.png")}
                     style={{ height: '70px' }} alt='LinkedIn link' /></a>
                 <a className='mr-5' target="_blank" rel="noopener noreferrer"
-                    href="https://drive.google.com/file/d/1F2pbTpznDsifhXGTu2a_CuD_ebsFzk24/view?usp=sharing"><img src={require("../../assets/images/resume.png")}
+                    href="https://docs.google.com/document/d/18zSc_9SBwhdEKJjUGzj3Na4t3rf_rP8MIf3-7dJr3n8/edit?usp=sharing"><img src={require("../../assets/images/resume.png")}
                         style={{ height: '70px' }} alt='Resume link' /></a>
 
             </div >

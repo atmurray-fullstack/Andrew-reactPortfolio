@@ -4,7 +4,7 @@ import './screen.css'
 
 const AppScreen = ({ children }) => {
     return (
-        <div className='container' >
+        <div className='container-fluid' >
             {children}
         </div>
     );

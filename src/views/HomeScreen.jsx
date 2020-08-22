@@ -14,7 +14,7 @@ const HomeScreen = () => {
         {
             pic: 'instagroom_gif.gif',
             title: 'Instagroom App',
-            description: 'React Native mobile app',
+            description: 'React Native app for pet groomers',
             deployedUrl: "https://expo.io/@atmurray/instagroom-client",
             repoUrl: "https://github.com/deawar/instagroom-client",
             tech: 'Node.js, Express, React-Native, MongoDB'
@@ -105,7 +105,7 @@ const HomeScreen = () => {
     }, [])
 
     return (
-        <div className='container-fluid' style={{ margin: 0, padding: 0 }}>
+        <div className='container-fluid' style={{ margin: 0, padding: 0, }}>
             <AppHeader />
             <Parallax height={400} >
                 <img id='profile-pic' alt='Andrew Profile Pic' src={require('../assets/images/Andrew_profile.jpg')} />
@@ -118,9 +118,10 @@ const HomeScreen = () => {
                     <p>React/React-Native || JavaScript || Html & CSS || jQuery || Node.js || MongoDB || MySQL</p>
                     <hr className="my-1" />
                     <h3>About Me</h3>
-                    <p>I am a graduate, or soon to be (depending on when you are reading this) of Georgia Tech's Fullstack coding bootcamp.
+                    <p>I am a graduate of Georgia Tech's Fullstack coding bootcamp.
                     I like to work in the front end, but sometimes you have to wear a lot of hats. I enjoy working with React/React-Native
-                         since it allows me to use my favorite language; JavaScript.</p>
+                    since it allows me to use my favorite language JavaScript. I really enjoy coding and learning new coding tools
+                         to use in solving problems. </p>
                 </div>
 
                 <div id='projects' className="card text-center mb-2 d-flex justify-content-center align-items-center" style={{ width: '100%' }}>
@@ -152,11 +153,12 @@ const HomeScreen = () => {
                             fontSize: '1.5rem',
                             fontWeight: 'bold',
                             color: 'orange'
-                        }}>
+                        }}
+                        >
                             <p>Contact Info</p>
                             <p>atmurray.fullstack@gmail.com</p>
                             <p>(470)265-9858</p>
-                            <div style={{ height: 2, backgroundColor: 'orange', width: '100%' }} />
+                            <div style={{ height: 2, width: '100%' }} />
                             <p className='mt-2' style={{ fontSize: '1rem' }} >Links to Github, LinkedIn, and Resume below</p>
                         </div>
                     </div>
